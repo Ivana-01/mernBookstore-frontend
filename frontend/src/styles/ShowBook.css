@@ -1,0 +1,23 @@
+.bookShow{
+    background-color: rgb(214,212,206);
+    padding: 5%;
+    margin: 2% 10%;
+    display: flex;
+    gap: 10%;
+    border-radius: 10px;
+}
+.imgDetail{
+    width: 30%;
+}
+.imgDetail > img{
+    width: 100%;
+}
+.details > h1{
+    color: rgb(63,61,86);
+    margin-bottom: 25%;
+}
+.bookTitle, .bookAuthor, .bookPY{
+    color: rgb(63,61,86);
+    font-size: 24px;
+    font-weight: 700;
+}

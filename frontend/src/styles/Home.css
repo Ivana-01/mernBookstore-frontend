@@ -1,0 +1,43 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgbg{
+    width: 50%;
+}
+.bg{
+    width: 100%;
+}
+.info{
+    width: 40%;
+    text-align: center;
+    padding: 5%;
+}
+.info > *{
+    margin: 20px;
+    padding: 20px;
+}
+.info > h1{
+    font-size: 40px;
+    color: rgb(63,61,86);
+}
+.info > p{
+    font-size: 20px;
+    color: rgb(63,61,86);
+}
+.booksLinkBtn{
+    background-color: rgb(63,61,86);
+    border-radius: 20px;
+}
+.booksLink{
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(214,212,206);
+    font-size: 20px;
+    font-weight: 700;
+}
+.booksLinkBtn:hover{
+    cursor: pointer;
+    background-color: rgb(43, 42, 58);
+}

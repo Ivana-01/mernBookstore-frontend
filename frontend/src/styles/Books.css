@@ -1,0 +1,59 @@
+.library{
+    background-color: rgb(214,212,206, 0.8);   
+    border-radius: 10px;
+    padding: 5%;
+    margin: 5% 10%;
+}
+.add{
+    text-decoration: none;
+    background-color: rgb(63,61,86);
+    padding: 10px 50px;
+    color: rgb(214,212,206);
+    border-radius: 10px;
+}
+.booksGrid{
+    margin: 10% 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.book{
+    background-color: rgb(63,61,86);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: 300px;
+    margin: 2.5%;
+    color: rgb(214,212,206);
+    border-radius: 10px;
+}
+.bookInfo{
+    text-align: center;
+    padding: 5%;
+}
+.bookOptions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 10% 0;
+}
+.bookOptionsLink{
+    text-decoration: none;
+    color: rgb(214,212,206);
+    padding: 10%;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.bookOptionsLink:hover{
+    color: rgb(214,212,206, 0.5);
+    background-color: rgb(33, 31, 44);
+    box-shadow: 3px 3px 5px rgb(18, 17, 24);
+}
+.bookOptionsLink:active{
+    color: rgb(214,212,206, 0.3);
+    background-color: rgb(18, 17, 24);
+    box-shadow: inset 3px 3px 5px rgb(8, 7, 10);
+}
