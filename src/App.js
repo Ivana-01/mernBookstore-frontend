@@ -7,7 +7,7 @@ import Books from './pages/Books';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 
-export const URL = process.env.REACT_APP_URL;
+export const URL = process.env.REACT_APP_SERVER_URL;
 
 function App() {
   return (
