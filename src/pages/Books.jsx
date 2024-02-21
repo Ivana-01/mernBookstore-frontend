@@ -2,12 +2,13 @@ import '../styles/Books.css'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { URL } from '../App'
+import axios from 'axios'
 
 function Books() {
   const [books, setBooks] = useState([]);
  
     useEffect(() => {
-        fetch(`${URL}/books`)
+        axios.get(`${URL}/books`)
         .then(res => res.json())
         .then(data => setBooks(data))
         .catch(err => console.log(err))

@@ -14,7 +14,7 @@ function CreateBook() {
     .then(res => {
       console.log(res.data);
       alert('Book created');
-      window.location.href = '/books';
+      window.location.href = `${URL}/books`;
     })
     .catch(err => console.log(err));
   }
