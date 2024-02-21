@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios';
 import '../styles/CreateBook.css'
+import { URL } from '../App';
 
 function CreateBook() {
   const [title, setTitle] = useState('');
@@ -9,7 +10,7 @@ function CreateBook() {
   const handleBook = (e) => {
     e.preventDefault();
     const book = { title, author, publishYear };
-    axios.post('http://localhost:5555/books', book)
+    axios.post(`${URL}/books`, book)
     .then(res => {
       console.log(res.data);
       alert('Book created');

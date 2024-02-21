@@ -7,6 +7,8 @@ import Books from './pages/Books';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 
+export const URL = process.env.REACT_APP_URL;
+
 function App() {
   return (
     <div className="App">

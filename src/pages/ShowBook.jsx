@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import '../styles/ShowBook.css'
 import img from '../img/bookDetails.png'
+import { URL } from '../App'
 
 function ShowBook() {
   const [books, setBooks] = useState([])
   const { id } = useParams();
   useEffect(() => {
-    fetch(`http://localhost:5555/books/${id}`)
+    fetch(`${URL}/books/${id}`)
       .then(res => res.json())
       .then(data => setBooks(data))
       .catch(err => console.log(err))

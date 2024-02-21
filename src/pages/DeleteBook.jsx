@@ -2,12 +2,13 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/DeleteBook.css'
+import { URL } from '../App';
 
 function DeleteBook() {
   const { id } = useParams();
     const handleBook = (e) => {
       e.preventDefault();
-      axios.delete(`http://localhost:5555/books/${id}`)
+      axios.delete(`${URL}/books/${id}`)
       .then(window.location.href = '/books')
       .catch(err => console.log(err))
       };

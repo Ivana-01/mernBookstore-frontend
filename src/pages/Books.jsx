@@ -1,12 +1,13 @@
 import '../styles/Books.css'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { URL } from '../App'
 
 function Books() {
   const [books, setBooks] = useState([]);
  
     useEffect(() => {
-        fetch('http://localhost:5555/books')
+        fetch(`${URL}/books`)
         .then(res => res.json())
         .then(data => setBooks(data))
         .catch(err => console.log(err))
